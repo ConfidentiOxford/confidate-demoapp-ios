@@ -1,6 +1,0 @@
-framework module MoproKit {
-  umbrella header "MoproKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -12,3 +12,9 @@
 *.xcuserstate
 xcuserdata/
 DerivedData/
+
+# Mopro
+libmopro_ffi.a
+
+# Cocoa Pods
+Confidate/Pods/
