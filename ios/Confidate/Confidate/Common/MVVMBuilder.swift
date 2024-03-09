@@ -17,4 +17,11 @@ final class MVVMBuilder {
         viewModel.view = vc
         return vc
     }
+    /// Create WalletConnect View Controller
+    static var walletConnectVC: WalletConnectViewController {
+        let viewModel = WalletConnectViewModel()
+        let vc = WalletConnectViewController(viewModel: viewModel)
+        viewModel.view = vc
+        return vc
+    }
 }

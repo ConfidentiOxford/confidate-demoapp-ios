@@ -14,6 +14,8 @@ final class InitialViewModel {
     
     @objc func logInTapped() {
         print("[InitialViewModel] SignIn tapped")
+        let walletVC = MVVMBuilder.walletConnectVC
+        view?.translate(to: walletVC)
     }
     
     @objc func signUpTapped() {
