@@ -13,9 +13,28 @@
 		5E0503582B9C60E30034C293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E0503562B9C60E30034C293 /* Main.storyboard */; };
 		5E05035A2B9C60E50034C293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0503592B9C60E50034C293 /* Assets.xcassets */; };
 		5E05035D2B9C60E50034C293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E05035B2B9C60E50034C293 /* LaunchScreen.storyboard */; };
+		60B1A3FD2B9C94070045BCF1 /* IpfsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B1A3FC2B9C94070045BCF1 /* IpfsHelper.swift */; };
+		60B1A4012B9C96050045BCF1 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 60B1A4002B9C96050045BCF1 /* image.png */; };
+		60B1A4102B9C96700045BCF1 /* IpfsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B1A40F2B9C96700045BCF1 /* IpfsTest.swift */; };
+		60B1A4112B9C9BD40045BCF1 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 60B1A4002B9C96050045BCF1 /* image.png */; };
+		7B755B196FC42F67D5EBACA5 /* Pods_ConfidateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4FA9B74740CA1567ACDA01 /* Pods_ConfidateTests.framework */; };
+		7D57CCBE0EE80687144F084F /* Pods_Confidate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABF949B6B27BA38B9C7D836 /* Pods_Confidate.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		60B1A40A2B9C96610045BCF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E0503452B9C60E20034C293 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E05034C2B9C60E20034C293;
+			remoteInfo = Confidate;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		30793AD150AB43DB456BDD6D /* Pods-Confidate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confidate.debug.xcconfig"; path = "Target Support Files/Pods-Confidate/Pods-Confidate.debug.xcconfig"; sourceTree = "<group>"; };
+		41F70983A38E5E3403E275C0 /* Pods-Confidate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confidate.release.xcconfig"; path = "Target Support Files/Pods-Confidate/Pods-Confidate.release.xcconfig"; sourceTree = "<group>"; };
+		4B4FA9B74740CA1567ACDA01 /* Pods_ConfidateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConfidateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E05034D2B9C60E20034C293 /* Confidate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Confidate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0503502B9C60E30034C293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E0503522B9C60E30034C293 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +43,14 @@
 		5E0503592B9C60E50034C293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E05035C2B9C60E50034C293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E05035E2B9C60E50034C293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60B1A3FC2B9C94070045BCF1 /* IpfsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpfsHelper.swift; sourceTree = "<group>"; };
+		60B1A4002B9C96050045BCF1 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		60B1A4062B9C96610045BCF1 /* ConfidateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfidateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B1A40F2B9C96700045BCF1 /* IpfsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpfsTest.swift; sourceTree = "<group>"; };
+		60B1A4122B9C9F560045BCF1 /* Secrets..xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets..xcconfig; sourceTree = "<group>"; };
+		D8A56777024CD9630CCF096C /* Pods-ConfidateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfidateTests.release.xcconfig"; path = "Target Support Files/Pods-ConfidateTests/Pods-ConfidateTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED0F3638313E09D74341138B /* Pods-ConfidateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfidateTests.debug.xcconfig"; path = "Target Support Files/Pods-ConfidateTests/Pods-ConfidateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FABF949B6B27BA38B9C7D836 /* Pods_Confidate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Confidate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +58,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D57CCBE0EE80687144F084F /* Pods_Confidate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B1A4032B9C96610045BCF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B755B196FC42F67D5EBACA5 /* Pods_ConfidateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +76,12 @@
 		5E0503442B9C60E20034C293 = {
 			isa = PBXGroup;
 			children = (
+				60B1A4002B9C96050045BCF1 /* image.png */,
 				5E05034F2B9C60E20034C293 /* Confidate */,
+				60B1A4072B9C96610045BCF1 /* ConfidateTests */,
 				5E05034E2B9C60E20034C293 /* Products */,
+				7BF0FE35E212FD01921F5190 /* Pods */,
+				C4BF369C7531CFE794215B76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				5E05034D2B9C60E20034C293 /* Confidate.app */,
+				60B1A4062B9C96610045BCF1 /* ConfidateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				5E0503502B9C60E30034C293 /* AppDelegate.swift */,
+				60B1A3FC2B9C94070045BCF1 /* IpfsHelper.swift */,
+				60B1A4122B9C9F560045BCF1 /* Secrets..xcconfig */,
 				5E0503522B9C60E30034C293 /* SceneDelegate.swift */,
 				5E0503542B9C60E30034C293 /* ViewController.swift */,
 				5E0503562B9C60E30034C293 /* Main.storyboard */,
@@ -67,6 +110,34 @@
 			path = Confidate;
 			sourceTree = "<group>";
 		};
+		60B1A4072B9C96610045BCF1 /* ConfidateTests */ = {
+			isa = PBXGroup;
+			children = (
+				60B1A40F2B9C96700045BCF1 /* IpfsTest.swift */,
+			);
+			path = ConfidateTests;
+			sourceTree = "<group>";
+		};
+		7BF0FE35E212FD01921F5190 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30793AD150AB43DB456BDD6D /* Pods-Confidate.debug.xcconfig */,
+				41F70983A38E5E3403E275C0 /* Pods-Confidate.release.xcconfig */,
+				ED0F3638313E09D74341138B /* Pods-ConfidateTests.debug.xcconfig */,
+				D8A56777024CD9630CCF096C /* Pods-ConfidateTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4BF369C7531CFE794215B76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FABF949B6B27BA38B9C7D836 /* Pods_Confidate.framework */,
+				4B4FA9B74740CA1567ACDA01 /* Pods_ConfidateTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E0503612B9C60E50034C293 /* Build configuration list for PBXNativeTarget "Confidate" */;
 			buildPhases = (
+				A68796B791628B651D182580 /* [CP] Check Pods Manifest.lock */,
 				5E0503492B9C60E20034C293 /* Sources */,
 				5E05034A2B9C60E20034C293 /* Frameworks */,
 				5E05034B2B9C60E20034C293 /* Resources */,
+				6A13A1C9BF0462E20071DAA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -87,6 +160,25 @@
 			productReference = 5E05034D2B9C60E20034C293 /* Confidate.app */;
 			productType = "com.apple.product-type.application";
 		};
+		60B1A4052B9C96610045BCF1 /* ConfidateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60B1A40C2B9C96610045BCF1 /* Build configuration list for PBXNativeTarget "ConfidateTests" */;
+			buildPhases = (
+				020ADCFEC67B8A8FCDD29CB0 /* [CP] Check Pods Manifest.lock */,
+				60B1A4022B9C96610045BCF1 /* Sources */,
+				60B1A4032B9C96610045BCF1 /* Frameworks */,
+				60B1A4042B9C96610045BCF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60B1A40B2B9C96610045BCF1 /* PBXTargetDependency */,
+			);
+			name = ConfidateTests;
+			productName = ConfidateTests;
+			productReference = 60B1A4062B9C96610045BCF1 /* ConfidateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,11 +186,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					5E05034C2B9C60E20034C293 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					60B1A4052B9C96610045BCF1 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 5E05034C2B9C60E20034C293;
 					};
 				};
 			};
@@ -116,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				5E05034C2B9C60E20034C293 /* Confidate */,
+				60B1A4052B9C96610045BCF1 /* ConfidateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,13 +222,86 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B1A4012B9C96050045BCF1 /* image.png in Resources */,
 				5E05035D2B9C60E50034C293 /* LaunchScreen.storyboard in Resources */,
 				5E05035A2B9C60E50034C293 /* Assets.xcassets in Resources */,
 				5E0503582B9C60E30034C293 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60B1A4042B9C96610045BCF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B1A4112B9C9BD40045BCF1 /* image.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		020ADCFEC67B8A8FCDD29CB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConfidateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A13A1C9BF0462E20071DAA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Confidate/Pods-Confidate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Confidate/Pods-Confidate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Confidate/Pods-Confidate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A68796B791628B651D182580 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Confidate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E0503492B9C60E20034C293 /* Sources */ = {
@@ -139,12 +309,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E0503552B9C60E30034C293 /* ViewController.swift in Sources */,
+				60B1A3FD2B9C94070045BCF1 /* IpfsHelper.swift in Sources */,
 				5E0503512B9C60E30034C293 /* AppDelegate.swift in Sources */,
 				5E0503532B9C60E30034C293 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60B1A4022B9C96610045BCF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B1A4102B9C96700045BCF1 /* IpfsTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60B1A40B2B9C96610045BCF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E05034C2B9C60E20034C293 /* Confidate */;
+			targetProxy = 60B1A40A2B9C96610045BCF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5E0503562B9C60E30034C293 /* Main.storyboard */ = {
@@ -287,6 +474,7 @@
 		};
 		5E0503622B9C60E50034C293 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30793AD150AB43DB456BDD6D /* Pods-Confidate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +502,7 @@
 		};
 		5E0503632B9C60E50034C293 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41F70983A38E5E3403E275C0 /* Pods-Confidate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -339,6 +528,44 @@
 			};
 			name = Release;
 		};
+		60B1A40D2B9C96610045BCF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED0F3638313E09D74341138B /* Pods-ConfidateTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.confidenti.projects.ConfidateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Confidate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Confidate";
+			};
+			name = Debug;
+		};
+		60B1A40E2B9C96610045BCF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A56777024CD9630CCF096C /* Pods-ConfidateTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.confidenti.projects.ConfidateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Confidate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Confidate";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -356,6 +583,15 @@
 			buildConfigurations = (
 				5E0503622B9C60E50034C293 /* Debug */,
 				5E0503632B9C60E50034C293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60B1A40C2B9C96610045BCF1 /* Build configuration list for PBXNativeTarget "ConfidateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B1A40D2B9C96610045BCF1 /* Debug */,
+				60B1A40E2B9C96610045BCF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
