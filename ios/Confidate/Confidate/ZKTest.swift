@@ -21,9 +21,6 @@ struct ZKSetupView: UIViewControllerRepresentable {
 
 class ZKSetupViewController: UIViewController {
 
-  let arkzkeyUrl = URL(string: "https://mopro.vivianjeng.xyz/keccak256_256_test_final.arkzkey")
-  let wasmUrl = URL(string: "https://mopro.vivianjeng.xyz/keccak256_256_test.wasm")
-
   var setupButton = UIButton(type: .system)
   var proveButton = UIButton(type: .system)
   var verifyButton = UIButton(type: .system)
@@ -61,8 +58,6 @@ class ZKSetupViewController: UIViewController {
 
     textView.isEditable = false
 
-    //self.title = "Keccak256 (setup)"
-    //view.backgroundColor = .black
 
     // Setup actions for buttons
     setupButton.addTarget(self, action: #selector(runSetupAction), for: .touchUpInside)
