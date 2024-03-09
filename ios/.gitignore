@@ -13,8 +13,9 @@
 xcuserdata/
 DerivedData/
 
+
 # Mopro
-libmopro_ffi.a
+MoproKit/
 
 # Cocoa Pods
 Confidate/Pods/
