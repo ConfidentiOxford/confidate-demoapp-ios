@@ -8,7 +8,8 @@ class IPFSTests: XCTestCase {
 
         // Setup your mock URLProtocol to intercept the network request and provide the expected response
         
-        guard let fileURL = Bundle(for: type(of: self)).url(forResource: "image", withExtension: "png") else {
+        
+        guard let fileURL = Bundle(for: type(of: self)).url(forResource: "test", withExtension: "png") else {
             XCTFail("Test file not found in bundle.")
             return
         }
@@ -18,15 +19,17 @@ class IPFSTests: XCTestCase {
             XCTAssertNil(error, "Error should be nil")
             
             if let hash = hash {
-                print("Pinned file hash: \(hash)")
+                print("Pinned IPFS hash: \(hash)")
             }
 
             expectation.fulfill()
         }
         
-        print("waiting for completion")
+        print("Waiting for completion")
 
-        wait(for: [expectation], timeout: 60.0)
+        wait(for: [expectation], timeout: 15.0)
+        
+        // To access the image please head to `https://confidenti.infura-ipfs.io/ipfs/<IPFS HASH>`
     }
 
 

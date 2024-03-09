@@ -14,9 +14,10 @@
 		5E05035A2B9C60E50034C293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0503592B9C60E50034C293 /* Assets.xcassets */; };
 		5E05035D2B9C60E50034C293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E05035B2B9C60E50034C293 /* LaunchScreen.storyboard */; };
 		60B1A3FD2B9C94070045BCF1 /* IpfsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B1A3FC2B9C94070045BCF1 /* IpfsHelper.swift */; };
-		60B1A4012B9C96050045BCF1 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 60B1A4002B9C96050045BCF1 /* image.png */; };
 		60B1A4102B9C96700045BCF1 /* IpfsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B1A40F2B9C96700045BCF1 /* IpfsTest.swift */; };
-		60B1A4112B9C9BD40045BCF1 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 60B1A4002B9C96050045BCF1 /* image.png */; };
+		60B1A4142B9CA2990045BCF1 /* conf.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 60B1A4132B9CA2990045BCF1 /* conf.xcconfig */; };
+		60B1A4152B9CA2990045BCF1 /* conf.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 60B1A4132B9CA2990045BCF1 /* conf.xcconfig */; };
+		60B1A41A2B9CA7E80045BCF1 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 60B1A4192B9CA7E80045BCF1 /* test.png */; };
 		7B755B196FC42F67D5EBACA5 /* Pods_ConfidateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4FA9B74740CA1567ACDA01 /* Pods_ConfidateTests.framework */; };
 		7D57CCBE0EE80687144F084F /* Pods_Confidate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABF949B6B27BA38B9C7D836 /* Pods_Confidate.framework */; };
 /* End PBXBuildFile section */
@@ -44,10 +45,10 @@
 		5E05035C2B9C60E50034C293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E05035E2B9C60E50034C293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60B1A3FC2B9C94070045BCF1 /* IpfsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpfsHelper.swift; sourceTree = "<group>"; };
-		60B1A4002B9C96050045BCF1 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		60B1A4062B9C96610045BCF1 /* ConfidateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfidateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B1A40F2B9C96700045BCF1 /* IpfsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpfsTest.swift; sourceTree = "<group>"; };
-		60B1A4122B9C9F560045BCF1 /* Secrets..xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets..xcconfig; sourceTree = "<group>"; };
+		60B1A4132B9CA2990045BCF1 /* conf.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = conf.xcconfig; sourceTree = "<group>"; };
+		60B1A4192B9CA7E80045BCF1 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		D8A56777024CD9630CCF096C /* Pods-ConfidateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfidateTests.release.xcconfig"; path = "Target Support Files/Pods-ConfidateTests/Pods-ConfidateTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED0F3638313E09D74341138B /* Pods-ConfidateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfidateTests.debug.xcconfig"; path = "Target Support Files/Pods-ConfidateTests/Pods-ConfidateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FABF949B6B27BA38B9C7D836 /* Pods_Confidate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Confidate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +77,8 @@
 		5E0503442B9C60E20034C293 = {
 			isa = PBXGroup;
 			children = (
-				60B1A4002B9C96050045BCF1 /* image.png */,
+				60B1A4192B9CA7E80045BCF1 /* test.png */,
+				60B1A4132B9CA2990045BCF1 /* conf.xcconfig */,
 				5E05034F2B9C60E20034C293 /* Confidate */,
 				60B1A4072B9C96610045BCF1 /* ConfidateTests */,
 				5E05034E2B9C60E20034C293 /* Products */,
@@ -99,7 +101,6 @@
 			children = (
 				5E0503502B9C60E30034C293 /* AppDelegate.swift */,
 				60B1A3FC2B9C94070045BCF1 /* IpfsHelper.swift */,
-				60B1A4122B9C9F560045BCF1 /* Secrets..xcconfig */,
 				5E0503522B9C60E30034C293 /* SceneDelegate.swift */,
 				5E0503542B9C60E30034C293 /* ViewController.swift */,
 				5E0503562B9C60E30034C293 /* Main.storyboard */,
@@ -222,7 +223,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60B1A4012B9C96050045BCF1 /* image.png in Resources */,
+				60B1A41A2B9CA7E80045BCF1 /* test.png in Resources */,
+				60B1A4142B9CA2990045BCF1 /* conf.xcconfig in Resources */,
 				5E05035D2B9C60E50034C293 /* LaunchScreen.storyboard in Resources */,
 				5E05035A2B9C60E50034C293 /* Assets.xcassets in Resources */,
 				5E0503582B9C60E30034C293 /* Main.storyboard in Resources */,
@@ -233,7 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60B1A4112B9C9BD40045BCF1 /* image.png in Resources */,
+				60B1A4152B9CA2990045BCF1 /* conf.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +392,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -453,7 +455,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -530,7 +532,7 @@
 		};
 		60B1A40D2B9C96610045BCF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED0F3638313E09D74341138B /* Pods-ConfidateTests.debug.xcconfig */;
+			baseConfigurationReference = 30793AD150AB43DB456BDD6D /* Pods-Confidate.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -549,7 +551,7 @@
 		};
 		60B1A40E2B9C96610045BCF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8A56777024CD9630CCF096C /* Pods-ConfidateTests.release.xcconfig */;
+			baseConfigurationReference = 41F70983A38E5E3403E275C0 /* Pods-Confidate.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
