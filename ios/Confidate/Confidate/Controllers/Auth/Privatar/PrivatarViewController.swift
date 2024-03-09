@@ -19,16 +19,12 @@ final class PrivatarViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private struct Consts {
-        static let initialImageName1 = "initial_image_1"
-        static let initialImageName2 = "initial_image_2"
-    }
-    
     // MARK: - UI Components
+    var activityIndicator = UIActivityIndicatorView(style: .large)
+    
     private let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: Consts.initialImageName1)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -46,7 +42,7 @@ final class PrivatarViewController: UIViewController {
     
     private lazy var connectAccountButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Connect\nAccount", for: .normal)
+        button.setTitle("Finish", for: .normal)
         button.backgroundColor = .label
         button.tintColor = .systemBackground
         button.layer.cornerRadius = 20
@@ -59,6 +55,9 @@ final class PrivatarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // GENERATE
+        Task {
+            await viewModel.regenerateTapped()
+        }
         setupUI()
     }
     
@@ -69,14 +68,15 @@ final class PrivatarViewController: UIViewController {
         setupImageView()
         setupRegenerateButton()
         setupConnectAccountButton()
+        setupActivityIndicator()
     }
     
     private func setupImageView() {
         view.addSubview(imageView)
         imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 32).isActive = true
-        imageView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 32).isActive = true
-        imageView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: 32).isActive = true
-        imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 1).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 200).isActive = true
     }
     
     private func setupRegenerateButton() {
@@ -103,15 +103,38 @@ final class PrivatarViewController: UIViewController {
             .isActive = true
     }
     
+    func startAnimating() {
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+    }
+
+    func stopAnimating() {
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+    }
+    
+    private func setupActivityIndicator() {
+        view.addSubview(activityIndicator)
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicator.isHidden = true
+        activityIndicator.centerXAnchor.constraint(equalTo: imageView.centerXAnchor).isActive = true
+        activityIndicator.centerYAnchor.constraint(equalTo: imageView.centerYAnchor).isActive = true
+    }
+    
    
     // MARK: - Events
     @objc private func regenerateTouchUpInside() {
-        viewModel.finishTapped()
+        Task {
+            await viewModel.regenerateTapped()
+        }
     }
     
     @objc private func connectAccountUpInside() {
         viewModel.finishTapped()
     }
     
+    func set(image: UIImage) {
+        imageView.image = image
+    }
     
 }

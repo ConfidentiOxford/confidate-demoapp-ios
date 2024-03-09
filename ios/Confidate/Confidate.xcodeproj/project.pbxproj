@@ -29,6 +29,7 @@
 		5E4226F42B9CBD9800116E88 /* AvatarGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4226F32B9CBD9800116E88 /* AvatarGeneration.swift */; };
 		5E4226F62B9CBDD400116E88 /* Utilis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4226F52B9CBDD400116E88 /* Utilis.swift */; };
 		5E4226F82B9CC1F500116E88 /* BERTEmbedder.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 5E4226F72B9CC1F500116E88 /* BERTEmbedder.mlpackage */; };
+		5E4226FB2B9CC75E00116E88 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5E4226FA2B9CC75E00116E88 /* OpenAIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4226FB2B9CC75E00116E88 /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +197,9 @@
 			dependencies = (
 			);
 			name = Confidate;
+			packageProductDependencies = (
+				5E4226FA2B9CC75E00116E88 /* OpenAIKit */,
+			);
 			productName = Confidate;
 			productReference = 5E05034D2B9C60E20034C293 /* Confidate.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +228,9 @@
 				Base,
 			);
 			mainGroup = 5E0503442B9C60E20034C293;
+			packageReferences = (
+				5E4226F92B9CC75E00116E88 /* XCRemoteSwiftPackageReference "OpenAIKit" */,
+			);
 			productRefGroup = 5E05034E2B9C60E20034C293 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -479,6 +487,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E4226F92B9CC75E00116E88 /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OpenDive/OpenAIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E4226FA2B9CC75E00116E88 /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E4226F92B9CC75E00116E88 /* XCRemoteSwiftPackageReference "OpenAIKit" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E0503452B9C60E20034C293 /* Project object */;
 }
