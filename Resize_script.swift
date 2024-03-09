@@ -1,20 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import AppKit
 
 func resizeImage(at url: URL, to targetSize: CGSize, outputURL: URL) {
