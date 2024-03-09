@@ -1,0 +1,16 @@
+PODS:
+  - MoproKit (0.1.0)
+
+DEPENDENCIES:
+  - MoproKit (from `../MoproKit`)
+
+EXTERNAL SOURCES:
+  MoproKit:
+    :path: "../MoproKit"
+
+SPEC CHECKSUMS:
+  MoproKit: d1faf8f9495e8e84d085f6c4e57e36f951e6f07e
+
+PODFILE CHECKSUM: 5cc43047ab57ac464a54d3a5b011e86c82ef2e78
+
+COCOAPODS: 1.15.2

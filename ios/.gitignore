@@ -1,3 +1,6 @@
+
+
+
 # Mac OS X
 *.DS_Store
 
@@ -7,5 +10,12 @@
 *.mode2v3
 *.perspectivev3
 *.xcuserstate
-project.xcworkspace/
 xcuserdata/
+DerivedData/
+
+
+# Mopro
+MoproKit/
+
+# Cocoa Pods
+Confidate/Pods/
