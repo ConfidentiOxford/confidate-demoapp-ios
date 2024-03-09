@@ -29,7 +29,7 @@ final class InitialViewController: UIViewController {
         let label = UILabel()
         label.text = "Join us today!"
         label.font = .systemFont(ofSize: 45)
-        label.textColor = .label
+        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -37,8 +37,8 @@ final class InitialViewController: UIViewController {
     private lazy var signUpButton: UIButton = {
         let button = UIButton()
         button.setTitle("Sign Up", for: .normal)
-        button.backgroundColor = .label
-        button.titleLabel?.textColor = .systemBackground
+        button.backgroundColor = .black
+        button.titleLabel?.textColor = .white
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 20
         button.addTarget(self, action: #selector(signUpTouchUpInside), for: .touchUpInside)
@@ -71,7 +71,7 @@ final class InitialViewController: UIViewController {
     // MARK: - Setup UI components
     
     private func setupUI() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .white
         setupNavigationBar()
         setupSignUpButton()
         setupLabel()

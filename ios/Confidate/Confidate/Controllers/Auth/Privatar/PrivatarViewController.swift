@@ -32,8 +32,8 @@ final class PrivatarViewController: UIViewController {
     private lazy var regenerateButton: UIButton = {
         let button = UIButton()
         button.setTitle("Regenerate", for: .normal)
-        button.backgroundColor = .label
-        button.tintColor = .systemBackground
+        button.backgroundColor = .black
+        button.titleLabel?.textColor = .white
         button.layer.cornerRadius = 20
         button.addTarget(self, action: #selector(regenerateTouchUpInside), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -43,8 +43,8 @@ final class PrivatarViewController: UIViewController {
     private lazy var connectAccountButton: UIButton = {
         let button = UIButton()
         button.setTitle("Finish", for: .normal)
-        button.backgroundColor = .label
-        button.tintColor = .systemBackground
+        button.backgroundColor = .black
+        button.titleLabel?.textColor = .white
         button.layer.cornerRadius = 20
         button.addTarget(self, action: #selector(connectAccountUpInside), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -64,7 +64,7 @@ final class PrivatarViewController: UIViewController {
     // MARK: - Setup UI components
     
     private func setupUI() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .white
         setupImageView()
         setupRegenerateButton()
         setupConnectAccountButton()
@@ -137,8 +137,16 @@ final class PrivatarViewController: UIViewController {
         viewModel.finishTapped()
     }
     
-    func set(image: UIImage) {
+    func set(image: UIImage?) {
         imageView.image = image
+    }
+    
+    func showAllert() {
+        let alert = UIAlertController(title: "Attentiion",
+                                      message: "You need to generate avatar",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
 }

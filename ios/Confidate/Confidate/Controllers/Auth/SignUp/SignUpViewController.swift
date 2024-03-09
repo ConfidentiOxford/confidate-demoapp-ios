@@ -70,8 +70,8 @@ final class SetUpViewController: UIViewController {
     private lazy var autoFillButton: UIButton = {
         let button = UIButton()
         button.setTitle("AI Fill", for: .normal)
-        button.backgroundColor = .label
-        button.tintColor = .systemBackground
+        button.backgroundColor = .black
+        button.titleLabel?.textColor = .white
         button.layer.cornerRadius = 20
         button.addTarget(self, action: #selector(autoFillTouchUpInside), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -81,8 +81,8 @@ final class SetUpViewController: UIViewController {
     private lazy var finishButton: UIButton = {
         let button = UIButton()
         button.setTitle("Finish", for: .normal)
-        button.backgroundColor = .label
-        button.tintColor = .systemBackground
+        button.backgroundColor = .black
+        button.titleLabel?.textColor = .white
         button.layer.cornerRadius = 20
         button.addTarget(self, action: #selector(finishTouchInside), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -93,8 +93,8 @@ final class SetUpViewController: UIViewController {
     private lazy var nextButton: UIButton = {
         let button = UIButton()
         button.setTitle("Next", for: .normal)
-        button.backgroundColor = .label
-        button.tintColor = .systemBackground
+        button.backgroundColor = .black
+        button.titleLabel?.textColor = .white
         button.layer.cornerRadius = 20
         button.addTarget(self, action: #selector(nextTouchInside), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -114,7 +114,7 @@ final class SetUpViewController: UIViewController {
     // MARK: - Setup UI components
     
     private func setupUI() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .white
         setupImageView()
         setupGenderTextField()
         setupAnimalTextField()

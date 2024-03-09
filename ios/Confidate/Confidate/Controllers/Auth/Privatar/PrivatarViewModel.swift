@@ -31,10 +31,13 @@ final class PrivatarViewModel {
                             avatar: lastImage)
             let vc = MVVMBuilder.setUpWalletConnectVC(user: user)
             view?.present(vc)
+        } else {
+            view?.showAllert()
         }
     }
     
     func regenerateTapped() async {
+        await view?.set(image: nil)
         await view?.startAnimating()
         let image = await generator.generate(userInfo: userInfo)
         if let image = image {

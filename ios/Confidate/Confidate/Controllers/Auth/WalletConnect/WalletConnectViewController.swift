@@ -42,7 +42,7 @@ final class WalletConnectViewController: UIViewController {
     // MARK: - Setup UI components
     
     private func setupUI() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .white
         setupImageView()
     }
     
