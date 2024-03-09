@@ -13,9 +13,15 @@
 		5E0503582B9C60E30034C293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E0503562B9C60E30034C293 /* Main.storyboard */; };
 		5E05035A2B9C60E50034C293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0503592B9C60E50034C293 /* Assets.xcassets */; };
 		5E05035D2B9C60E50034C293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E05035B2B9C60E50034C293 /* LaunchScreen.storyboard */; };
+		6090BBCD2B9C6F06007E9D13 /* ZKTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6090BBCC2B9C6F06007E9D13 /* ZKTest.swift */; };
+		6090BBD22B9C70B0007E9D13 /* placeholder.arkzkey in Resources */ = {isa = PBXBuildFile; fileRef = 6090BBD02B9C70B0007E9D13 /* placeholder.arkzkey */; };
+		6090BBD32B9C70B0007E9D13 /* placeholder.wasm in Resources */ = {isa = PBXBuildFile; fileRef = 6090BBD12B9C70B0007E9D13 /* placeholder.wasm */; };
+		D1A1F6C203906DD4189D1FA5 /* Pods_Confidate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7294927B6F1428A04EC9C00F /* Pods_Confidate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		156DC19CFB28ABB4DB5AD0FC /* Pods-Confidate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confidate.debug.xcconfig"; path = "Target Support Files/Pods-Confidate/Pods-Confidate.debug.xcconfig"; sourceTree = "<group>"; };
+		2EF20468619E5AEB2D86AFC0 /* Pods-Confidate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Confidate.release.xcconfig"; path = "Target Support Files/Pods-Confidate/Pods-Confidate.release.xcconfig"; sourceTree = "<group>"; };
 		5E05034D2B9C60E20034C293 /* Confidate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Confidate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0503502B9C60E30034C293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E0503522B9C60E30034C293 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		5E0503592B9C60E50034C293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E05035C2B9C60E50034C293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E05035E2B9C60E50034C293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6090BBCC2B9C6F06007E9D13 /* ZKTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZKTest.swift; sourceTree = "<group>"; };
+		6090BBD02B9C70B0007E9D13 /* placeholder.arkzkey */ = {isa = PBXFileReference; lastKnownFileType = file; path = placeholder.arkzkey; sourceTree = "<group>"; };
+		6090BBD12B9C70B0007E9D13 /* placeholder.wasm */ = {isa = PBXFileReference; lastKnownFileType = file; path = placeholder.wasm; sourceTree = "<group>"; };
+		7294927B6F1428A04EC9C00F /* Pods_Confidate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Confidate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A1F6C203906DD4189D1FA5 /* Pods_Confidate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D22E134BF02342B04C59E62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				156DC19CFB28ABB4DB5AD0FC /* Pods-Confidate.debug.xcconfig */,
+				2EF20468619E5AEB2D86AFC0 /* Pods-Confidate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5E0503442B9C60E20034C293 = {
 			isa = PBXGroup;
 			children = (
+				6090BBD02B9C70B0007E9D13 /* placeholder.arkzkey */,
+				6090BBD12B9C70B0007E9D13 /* placeholder.wasm */,
 				5E05034F2B9C60E20034C293 /* Confidate */,
 				5E05034E2B9C60E20034C293 /* Products */,
+				3D22E134BF02342B04C59E62 /* Pods */,
+				7E489E5DF36CC0FB2AB0AE5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				5E0503502B9C60E30034C293 /* AppDelegate.swift */,
+				6090BBCC2B9C6F06007E9D13 /* ZKTest.swift */,
 				5E0503522B9C60E30034C293 /* SceneDelegate.swift */,
 				5E0503542B9C60E30034C293 /* ViewController.swift */,
 				5E0503562B9C60E30034C293 /* Main.storyboard */,
@@ -67,6 +92,14 @@
 			path = Confidate;
 			sourceTree = "<group>";
 		};
+		7E489E5DF36CC0FB2AB0AE5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7294927B6F1428A04EC9C00F /* Pods_Confidate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E0503612B9C60E50034C293 /* Build configuration list for PBXNativeTarget "Confidate" */;
 			buildPhases = (
+				7ED5CB85CD48B85ABA6F7206 /* [CP] Check Pods Manifest.lock */,
 				5E0503492B9C60E20034C293 /* Sources */,
 				5E05034A2B9C60E20034C293 /* Frameworks */,
 				5E05034B2B9C60E20034C293 /* Resources */,
+				FA42C7C1C13AE7A1D5EBDD73 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +160,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6090BBD22B9C70B0007E9D13 /* placeholder.arkzkey in Resources */,
+				6090BBD32B9C70B0007E9D13 /* placeholder.wasm in Resources */,
 				5E05035D2B9C60E50034C293 /* LaunchScreen.storyboard in Resources */,
 				5E05035A2B9C60E50034C293 /* Assets.xcassets in Resources */,
 				5E0503582B9C60E30034C293 /* Main.storyboard in Resources */,
@@ -133,11 +170,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7ED5CB85CD48B85ABA6F7206 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Confidate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA42C7C1C13AE7A1D5EBDD73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Confidate/Pods-Confidate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Confidate/Pods-Confidate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Confidate/Pods-Confidate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E0503492B9C60E20034C293 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6090BBCD2B9C6F06007E9D13 /* ZKTest.swift in Sources */,
 				5E0503552B9C60E30034C293 /* ViewController.swift in Sources */,
 				5E0503512B9C60E30034C293 /* AppDelegate.swift in Sources */,
 				5E0503532B9C60E30034C293 /* SceneDelegate.swift in Sources */,
@@ -203,7 +283,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +346,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +367,7 @@
 		};
 		5E0503622B9C60E50034C293 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156DC19CFB28ABB4DB5AD0FC /* Pods-Confidate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +395,7 @@
 		};
 		5E0503632B9C60E50034C293 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EF20468619E5AEB2D86AFC0 /* Pods-Confidate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
