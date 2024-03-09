@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 final class InitialViewModel {
     weak var view: InitialViewController?
     
@@ -20,5 +18,7 @@ final class InitialViewModel {
     
     @objc func signUpTapped() {
         print("[InitialViewModel] SignUp tapped")
+        let signupVC = MVVMBuilder.setupVC
+        view?.translate(to: signupVC)
     }
 }

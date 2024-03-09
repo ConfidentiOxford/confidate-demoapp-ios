@@ -17,6 +17,20 @@ final class MVVMBuilder {
         viewModel.view = vc
         return vc
     }
+    /// Create Set up View Controller
+    static var setupVC: SetUpViewController {
+        let viewModel = SetUpViewModel()
+        let vc = SetUpViewController(viewModel: viewModel)
+        viewModel.view = vc
+        return vc
+    }
+    // Create Avatar ViewController
+    static func privatarVC(userInfo: UserInfo) -> PrivatarViewController {
+        let viewModel = PrivatarViewModel(userInfo: userInfo)
+        let vc = PrivatarViewController(viewModel: viewModel)
+        viewModel.view = vc
+        return vc
+    }
     /// Create WalletConnect View Controller
     static var walletConnectVC: WalletConnectViewController {
         let viewModel = WalletConnectViewModel()
