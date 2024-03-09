@@ -11,6 +11,7 @@ import CoreML
 final class PrivatarViewModel {
     weak var view: PrivatarViewController?
     let generator: AvatarGenerator
+    
     var userInfo: UserInfo
     var lastImage: UIImage?
     
@@ -24,7 +25,12 @@ final class PrivatarViewModel {
         let embedder = UserEmbedder()
         let embedding = try? embedder.embed(userInfo: userInfo)
         if let embedding = embedding, let lastImage = lastImage {
-            // MARK: - HERE WE HAVE USER AVATAR AND EMBEDDING
+            // MARK: - WE HAVE USER AVATAR AND EMBEDDING
+            let user = User(info: userInfo,
+                            embedding: embedding,
+                            avatar: lastImage)
+            let vc = MVVMBuilder.setUpWalletConnectVC(user: user)
+            view?.present(vc)
         }
     }
     

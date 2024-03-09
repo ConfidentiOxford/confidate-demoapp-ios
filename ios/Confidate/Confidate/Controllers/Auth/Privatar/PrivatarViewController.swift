@@ -121,6 +121,10 @@ final class PrivatarViewController: UIViewController {
         activityIndicator.centerYAnchor.constraint(equalTo: imageView.centerYAnchor).isActive = true
     }
     
+    func present(_ vc: UIViewController) {
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
    
     // MARK: - Events
     @objc private func regenerateTouchUpInside() {

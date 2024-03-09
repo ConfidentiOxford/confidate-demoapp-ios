@@ -13,6 +13,11 @@ import Foundation
 
 final class WalletConnectViewModel {
     weak var view: WalletConnectViewController?
+    let user: User?
+    
+    init(user: User? = nil) {
+        self.user = user
+    }
     
     func initSession() {
 //        let metadata = AppMetadata(

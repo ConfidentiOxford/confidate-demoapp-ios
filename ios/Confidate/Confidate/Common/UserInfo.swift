@@ -5,7 +5,8 @@
 //  Created by Maxim Perehod on 09.03.2024.
 //
 
-import Foundation
+import UIKit
+import CoreML
 
 struct UserInfo {
     let gender: String
@@ -15,4 +16,10 @@ struct UserInfo {
     var prompt: String {
         gender + " " + animal + " " + hobbie
     }
+}
+
+struct User {
+    let info: UserInfo
+    let embedding: MLMultiArray
+    let avatar: UIImage
 }

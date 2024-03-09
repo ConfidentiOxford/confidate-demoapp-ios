@@ -38,4 +38,10 @@ final class MVVMBuilder {
         viewModel.view = vc
         return vc
     }
+    static func setUpWalletConnectVC(user: User) -> WalletConnectViewController {
+        let viewModel = WalletConnectViewModel(user: user)
+        let vc = WalletConnectViewController(viewModel: viewModel)
+        viewModel.view = vc
+        return vc
+    }
 }
