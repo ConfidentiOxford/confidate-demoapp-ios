@@ -106,11 +106,11 @@ final class PrivatarViewController: UIViewController {
    
     // MARK: - Events
     @objc private func regenerateTouchUpInside() {
-        // TODO: - Regerate Midj avatar
+        viewModel.finishTapped()
     }
     
     @objc private func connectAccountUpInside() {
-        // TODO: - Add connect wallet logic
+        viewModel.finishTapped()
     }
     
     

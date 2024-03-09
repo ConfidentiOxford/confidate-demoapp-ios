@@ -40,7 +40,7 @@ final class SetUpViewController: UIViewController {
         textField.borderStyle = .roundedRect
         textField.textAlignment = .center
         textField.delegate = self
-        textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        textField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -52,7 +52,7 @@ final class SetUpViewController: UIViewController {
         textField.textAlignment = .center
         textField.delegate = self
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        textField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         return textField
     }()
     
@@ -63,7 +63,7 @@ final class SetUpViewController: UIViewController {
         textField.textAlignment = .center
         textField.delegate = self
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        textField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         return textField
     }()
     
@@ -231,7 +231,7 @@ final class SetUpViewController: UIViewController {
         viewModel.finishTapped(genderText: gender, animalText: animal, hobbieText: hobbie)
     }
     
-    @objc private func textFieldDidChange(_ textField: UITextField) {
+    @objc private func textFieldDidChange() {
         guard let gender = genderTextField.text,
               let animal = animalPrefferenceTextField.text,
               let hobbie = hobbieTextField.text else { return }
@@ -244,6 +244,7 @@ final class SetUpViewController: UIViewController {
     
     func setTextField(text: String) {
         animalPrefferenceTextField.text = text
+        textFieldDidChange()
     }
     
     func approveFields() {

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreML
 
 final class PrivatarViewModel {
     weak var view: PrivatarViewController?
@@ -13,5 +14,18 @@ final class PrivatarViewModel {
     
     init(userInfo: UserInfo) {
         self.userInfo = userInfo
+    }
+    
+    func finishTapped() {
+        // Create embedding
+        let embedder = UserEmbedder()
+        let embedding = try? embedder.embed(userInfo: userInfo)
+        if let embedding = embedding {
+            print(embedding)
+        }
+    }
+    
+    func regenerateTapped() {
+        
     }
 }
