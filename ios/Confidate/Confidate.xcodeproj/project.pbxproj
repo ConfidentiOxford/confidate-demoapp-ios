@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,8 +29,17 @@
 		5E4226F42B9CBD9800116E88 /* AvatarGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4226F32B9CBD9800116E88 /* AvatarGeneration.swift */; };
 		5E4226F62B9CBDD400116E88 /* Utilis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4226F52B9CBDD400116E88 /* Utilis.swift */; };
 		5E4226FB2B9CC75E00116E88 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5E4226FA2B9CC75E00116E88 /* OpenAIKit */; };
-		5EEA2F8E2B9DDDB800AF49AC /* EntityDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2F8D2B9DDDB800AF49AC /* EntityDetector.swift */; };
-		5EEA2F902B9DDDC700AF49AC /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2F8F2B9DDDC700AF49AC /* ImageProcessor.swift */; };
+		5EEA2F972B9DE81800AF49AC /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2F962B9DE81800AF49AC /* Web3 */; };
+		5EEA2F992B9DE81800AF49AC /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2F982B9DE81800AF49AC /* Web3ContractABI */; };
+		5EEA2F9B2B9DE81800AF49AC /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2F9A2B9DE81800AF49AC /* Web3PromiseKit */; };
+		5EEA2F9E2B9DE88000AF49AC /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2F9D2B9DE88000AF49AC /* Starscream */; };
+		5EEA2FA12B9DE8E300AF49AC /* Web3Modal in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FA02B9DE8E300AF49AC /* Web3Modal */; };
+		5EEA2FA32B9DE8E300AF49AC /* Web3ModalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FA22B9DE8E300AF49AC /* Web3ModalUI */; };
+		5EEA2FA52B9DE91E00AF49AC /* AppSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2FA42B9DE91E00AF49AC /* AppSample.swift */; };
+		5EEA2FA72B9DF48900AF49AC /* EntityDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2FA62B9DF48900AF49AC /* EntityDetector.swift */; };
+		5EEA2FA92B9DF49C00AF49AC /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2FA82B9DF49C00AF49AC /* ImageProcessor.swift */; };
+		5EEA2FAB2B9DF7A200AF49AC /* extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2FAA2B9DF7A200AF49AC /* extra.swift */; };
+		5EEA2FAD2B9DF92500AF49AC /* confidating.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EEA2FAC2B9DF92500AF49AC /* confidating.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,8 +66,11 @@
 		5E4226F12B9CBC9000116E88 /* vocab.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = vocab.txt; sourceTree = "<group>"; };
 		5E4226F32B9CBD9800116E88 /* AvatarGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarGeneration.swift; sourceTree = "<group>"; };
 		5E4226F52B9CBDD400116E88 /* Utilis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilis.swift; sourceTree = "<group>"; };
-		5EEA2F8D2B9DDDB800AF49AC /* EntityDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntityDetector.swift; path = ../../../../../../Downloads/EntityDetector.swift; sourceTree = "<group>"; };
-		5EEA2F8F2B9DDDC700AF49AC /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = ../../../../../../Downloads/ImageProcessor.swift; sourceTree = "<group>"; };
+		5EEA2FA42B9DE91E00AF49AC /* AppSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppSample.swift; path = ../../../../../AppSample.swift; sourceTree = "<group>"; };
+		5EEA2FA62B9DF48900AF49AC /* EntityDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityDetector.swift; sourceTree = "<group>"; };
+		5EEA2FA82B9DF49C00AF49AC /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		5EEA2FAA2B9DF7A200AF49AC /* extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extra.swift; sourceTree = "<group>"; };
+		5EEA2FAC2B9DF92500AF49AC /* confidating.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = confidating.json; path = ../../../../Downloads/confidating.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +78,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EEA2F992B9DE81800AF49AC /* Web3ContractABI in Frameworks */,
+				5EEA2FA32B9DE8E300AF49AC /* Web3ModalUI in Frameworks */,
 				5E4226FB2B9CC75E00116E88 /* OpenAIKit in Frameworks */,
+				5EEA2F9B2B9DE81800AF49AC /* Web3PromiseKit in Frameworks */,
+				5EEA2FA12B9DE8E300AF49AC /* Web3Modal in Frameworks */,
+				5EEA2F9E2B9DE88000AF49AC /* Starscream in Frameworks */,
+				5EEA2F972B9DE81800AF49AC /* Web3 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +94,7 @@
 		5E0503442B9C60E20034C293 = {
 			isa = PBXGroup;
 			children = (
+				5EEA2FAC2B9DF92500AF49AC /* confidating.json */,
 				5E05034F2B9C60E20034C293 /* Confidate */,
 				5E05034E2B9C60E20034C293 /* Products */,
 			);
@@ -108,14 +127,16 @@
 				5E0503522B9C60E30034C293 /* SceneDelegate.swift */,
 				5E0503502B9C60E30034C293 /* AppDelegate.swift */,
 				5E4226C42B9C6B4300116E88 /* MVVMBuilder.swift */,
-				5EEA2F8D2B9DDDB800AF49AC /* EntityDetector.swift */,
 				5E4226DE2B9CA9A500116E88 /* User.swift */,
 				5E4226E72B9CAC3A00116E88 /* UIImage+Extension.swift */,
 				5E4226EB2B9CBC1000116E88 /* UserEmbedder.swift */,
 				5E4226EF2B9CBC5B00116E88 /* BertTokenizer.swift */,
+				5EEA2FA42B9DE91E00AF49AC /* AppSample.swift */,
 				5E4226F32B9CBD9800116E88 /* AvatarGeneration.swift */,
-				5EEA2F8F2B9DDDC700AF49AC /* ImageProcessor.swift */,
 				5E4226F52B9CBDD400116E88 /* Utilis.swift */,
+				5EEA2FA62B9DF48900AF49AC /* EntityDetector.swift */,
+				5EEA2FA82B9DF49C00AF49AC /* ImageProcessor.swift */,
+				5EEA2FAA2B9DF7A200AF49AC /* extra.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -202,6 +223,12 @@
 			name = Confidate;
 			packageProductDependencies = (
 				5E4226FA2B9CC75E00116E88 /* OpenAIKit */,
+				5EEA2F962B9DE81800AF49AC /* Web3 */,
+				5EEA2F982B9DE81800AF49AC /* Web3ContractABI */,
+				5EEA2F9A2B9DE81800AF49AC /* Web3PromiseKit */,
+				5EEA2F9D2B9DE88000AF49AC /* Starscream */,
+				5EEA2FA02B9DE8E300AF49AC /* Web3Modal */,
+				5EEA2FA22B9DE8E300AF49AC /* Web3ModalUI */,
 			);
 			productName = Confidate;
 			productReference = 5E05034D2B9C60E20034C293 /* Confidate.app */;
@@ -233,6 +260,9 @@
 			mainGroup = 5E0503442B9C60E20034C293;
 			packageReferences = (
 				5E4226F92B9CC75E00116E88 /* XCRemoteSwiftPackageReference "OpenAIKit" */,
+				5EEA2F952B9DE81800AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */,
+				5EEA2F9C2B9DE88000AF49AC /* XCRemoteSwiftPackageReference "Starscream" */,
+				5EEA2F9F2B9DE8E300AF49AC /* XCLocalSwiftPackageReference "../../web3modal-swift" */,
 			);
 			productRefGroup = 5E05034E2B9C60E20034C293 /* Products */;
 			projectDirPath = "";
@@ -250,6 +280,7 @@
 			files = (
 				5E05035D2B9C60E50034C293 /* LaunchScreen.storyboard in Resources */,
 				5E05035A2B9C60E50034C293 /* Assets.xcassets in Resources */,
+				5EEA2FAD2B9DF92500AF49AC /* confidating.json in Resources */,
 				5E4226F22B9CBC9400116E88 /* vocab.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +294,8 @@
 			files = (
 				5E4226CE2B9C6BB100116E88 /* InitialViewController.swift in Sources */,
 				5E4226EC2B9CBC1000116E88 /* UserEmbedder.swift in Sources */,
+				5EEA2FAB2B9DF7A200AF49AC /* extra.swift in Sources */,
+				5EEA2FA92B9DF49C00AF49AC /* ImageProcessor.swift in Sources */,
 				5E4226E82B9CAC3A00116E88 /* UIImage+Extension.swift in Sources */,
 				5E4226C52B9C6B4300116E88 /* MVVMBuilder.swift in Sources */,
 				5E4226F02B9CBC5B00116E88 /* BertTokenizer.swift in Sources */,
@@ -270,9 +303,9 @@
 				5E4226DB2B9C777F00116E88 /* SignUpViewController.swift in Sources */,
 				5E0503512B9C60E30034C293 /* AppDelegate.swift in Sources */,
 				5E4226DD2B9C778800116E88 /* SignUpViewModel.swift in Sources */,
+				5EEA2FA72B9DF48900AF49AC /* EntityDetector.swift in Sources */,
 				5E4226E62B9CAAC900116E88 /* model_cat_dog_rgb.mlmodel in Sources */,
-				5EEA2F902B9DDDC700AF49AC /* ImageProcessor.swift in Sources */,
-				5EEA2F8E2B9DDDB800AF49AC /* EntityDetector.swift in Sources */,
+				5EEA2FA52B9DE91E00AF49AC /* AppSample.swift in Sources */,
 				5E4226F42B9CBD9800116E88 /* AvatarGeneration.swift in Sources */,
 				5E4226D82B9C771800116E88 /* WalletConnectViewModel.swift in Sources */,
 				5E0503532B9C60E30034C293 /* SceneDelegate.swift in Sources */,
@@ -494,6 +527,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		5EEA2F9F2B9DE8E300AF49AC /* XCLocalSwiftPackageReference "../../web3modal-swift" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../web3modal-swift";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		5E4226F92B9CC75E00116E88 /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -503,6 +543,22 @@
 				minimumVersion = 2.0.1;
 			};
 		};
+		5EEA2F952B9DE81800AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Boilertalk/Web3.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.7;
+			};
+		};
+		5EEA2F9C2B9DE88000AF49AC /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -510,6 +566,34 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5E4226F92B9CC75E00116E88 /* XCRemoteSwiftPackageReference "OpenAIKit" */;
 			productName = OpenAIKit;
+		};
+		5EEA2F962B9DE81800AF49AC /* Web3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EEA2F952B9DE81800AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3;
+		};
+		5EEA2F982B9DE81800AF49AC /* Web3ContractABI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EEA2F952B9DE81800AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3ContractABI;
+		};
+		5EEA2F9A2B9DE81800AF49AC /* Web3PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EEA2F952B9DE81800AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3PromiseKit;
+		};
+		5EEA2F9D2B9DE88000AF49AC /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EEA2F9C2B9DE88000AF49AC /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		5EEA2FA02B9DE8E300AF49AC /* Web3Modal */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Web3Modal;
+		};
+		5EEA2FA22B9DE8E300AF49AC /* Web3ModalUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Web3ModalUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

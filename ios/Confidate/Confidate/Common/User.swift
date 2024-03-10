@@ -23,3 +23,11 @@ struct User {
     let embedding: MLMultiArray
     let avatar: UIImage
 }
+
+class UserData: ObservableObject {
+    @Published var user: User
+    
+    init(user: User) {
+        self.user = user
+    }
+}
