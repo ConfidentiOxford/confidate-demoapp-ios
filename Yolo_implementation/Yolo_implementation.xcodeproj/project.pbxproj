@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4B6212F2B9CE36D003C496F /* Yolo_implementationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B6212E2B9CE36D003C496F /* Yolo_implementationApp.swift */; };
+		E4B621312B9CE36D003C496F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B621302B9CE36D003C496F /* ContentView.swift */; };
+		E4B621332B9CE36E003C496F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B621322B9CE36E003C496F /* Assets.xcassets */; };
+		E4B621362B9CE36E003C496F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B621352B9CE36E003C496F /* Preview Assets.xcassets */; };
+		E4B621402B9CE36E003C496F /* Yolo_implementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B6213F2B9CE36E003C496F /* Yolo_implementationTests.swift */; };
+		E4B6214A2B9CE36E003C496F /* Yolo_implementationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B621492B9CE36E003C496F /* Yolo_implementationUITests.swift */; };
+		E4B6214C2B9CE36E003C496F /* Yolo_implementationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B6214B2B9CE36E003C496F /* Yolo_implementationUITestsLaunchTests.swift */; };
+		E4B621592B9D35F6003C496F /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E4B621582B9D35F6003C496F /* YOLOv3.mlmodel */; };
+		E4B6215A2B9D35F6003C496F /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E4B621582B9D35F6003C496F /* YOLOv3.mlmodel */; };
+		E4B6215B2B9D35F6003C496F /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E4B621582B9D35F6003C496F /* YOLOv3.mlmodel */; };
+		E4B6215D2B9D4492003C496F /* ModelPredictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B6215C2B9D4492003C496F /* ModelPredictions.swift */; };
+		E4B6215E2B9D4492003C496F /* ModelPredictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B6215C2B9D4492003C496F /* ModelPredictions.swift */; };
+		E4B6215F2B9D4492003C496F /* ModelPredictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B6215C2B9D4492003C496F /* ModelPredictions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4B6213C2B9CE36E003C496F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4B621232B9CE36D003C496F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B6212A2B9CE36D003C496F;
+			remoteInfo = Yolo_implementation;
+		};
+		E4B621462B9CE36E003C496F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4B621232B9CE36D003C496F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B6212A2B9CE36D003C496F;
+			remoteInfo = Yolo_implementation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4B6212B2B9CE36D003C496F /* Yolo_implementation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yolo_implementation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B6212E2B9CE36D003C496F /* Yolo_implementationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yolo_implementationApp.swift; sourceTree = "<group>"; };
+		E4B621302B9CE36D003C496F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E4B621322B9CE36E003C496F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4B621352B9CE36E003C496F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4B6213B2B9CE36E003C496F /* Yolo_implementationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Yolo_implementationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B6213F2B9CE36E003C496F /* Yolo_implementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yolo_implementationTests.swift; sourceTree = "<group>"; };
+		E4B621452B9CE36E003C496F /* Yolo_implementationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Yolo_implementationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B621492B9CE36E003C496F /* Yolo_implementationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yolo_implementationUITests.swift; sourceTree = "<group>"; };
+		E4B6214B2B9CE36E003C496F /* Yolo_implementationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yolo_implementationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4B621582B9D35F6003C496F /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlmodel; sourceTree = "<group>"; };
+		E4B6215C2B9D4492003C496F /* ModelPredictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPredictions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B621282B9CE36D003C496F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B621382B9CE36E003C496F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B621422B9CE36E003C496F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4B621222B9CE36D003C496F = {
+			isa = PBXGroup;
+			children = (
+				E4B6212D2B9CE36D003C496F /* Yolo_implementation */,
+				E4B6213E2B9CE36E003C496F /* Yolo_implementationTests */,
+				E4B621482B9CE36E003C496F /* Yolo_implementationUITests */,
+				E4B6212C2B9CE36D003C496F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B6212C2B9CE36D003C496F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4B6212B2B9CE36D003C496F /* Yolo_implementation.app */,
+				E4B6213B2B9CE36E003C496F /* Yolo_implementationTests.xctest */,
+				E4B621452B9CE36E003C496F /* Yolo_implementationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B6212D2B9CE36D003C496F /* Yolo_implementation */ = {
+			isa = PBXGroup;
+			children = (
+				E4B621582B9D35F6003C496F /* YOLOv3.mlmodel */,
+				E4B6212E2B9CE36D003C496F /* Yolo_implementationApp.swift */,
+				E4B621302B9CE36D003C496F /* ContentView.swift */,
+				E4B6215C2B9D4492003C496F /* ModelPredictions.swift */,
+				E4B621322B9CE36E003C496F /* Assets.xcassets */,
+				E4B621342B9CE36E003C496F /* Preview Content */,
+			);
+			path = Yolo_implementation;
+			sourceTree = "<group>";
+		};
+		E4B621342B9CE36E003C496F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E4B621352B9CE36E003C496F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4B6213E2B9CE36E003C496F /* Yolo_implementationTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4B6213F2B9CE36E003C496F /* Yolo_implementationTests.swift */,
+			);
+			path = Yolo_implementationTests;
+			sourceTree = "<group>";
+		};
+		E4B621482B9CE36E003C496F /* Yolo_implementationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4B621492B9CE36E003C496F /* Yolo_implementationUITests.swift */,
+				E4B6214B2B9CE36E003C496F /* Yolo_implementationUITestsLaunchTests.swift */,
+			);
+			path = Yolo_implementationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B6212A2B9CE36D003C496F /* Yolo_implementation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B6214F2B9CE36E003C496F /* Build configuration list for PBXNativeTarget "Yolo_implementation" */;
+			buildPhases = (
+				E4B621272B9CE36D003C496F /* Sources */,
+				E4B621282B9CE36D003C496F /* Frameworks */,
+				E4B621292B9CE36D003C496F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yolo_implementation;
+			productName = Yolo_implementation;
+			productReference = E4B6212B2B9CE36D003C496F /* Yolo_implementation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4B6213A2B9CE36E003C496F /* Yolo_implementationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B621522B9CE36E003C496F /* Build configuration list for PBXNativeTarget "Yolo_implementationTests" */;
+			buildPhases = (
+				E4B621372B9CE36E003C496F /* Sources */,
+				E4B621382B9CE36E003C496F /* Frameworks */,
+				E4B621392B9CE36E003C496F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4B6213D2B9CE36E003C496F /* PBXTargetDependency */,
+			);
+			name = Yolo_implementationTests;
+			productName = Yolo_implementationTests;
+			productReference = E4B6213B2B9CE36E003C496F /* Yolo_implementationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4B621442B9CE36E003C496F /* Yolo_implementationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B621552B9CE36E003C496F /* Build configuration list for PBXNativeTarget "Yolo_implementationUITests" */;
+			buildPhases = (
+				E4B621412B9CE36E003C496F /* Sources */,
+				E4B621422B9CE36E003C496F /* Frameworks */,
+				E4B621432B9CE36E003C496F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4B621472B9CE36E003C496F /* PBXTargetDependency */,
+			);
+			name = Yolo_implementationUITests;
+			productName = Yolo_implementationUITests;
+			productReference = E4B621452B9CE36E003C496F /* Yolo_implementationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B621232B9CE36D003C496F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E4B6212A2B9CE36D003C496F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					E4B6213A2B9CE36E003C496F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E4B6212A2B9CE36D003C496F;
+					};
+					E4B621442B9CE36E003C496F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E4B6212A2B9CE36D003C496F;
+					};
+				};
+			};
+			buildConfigurationList = E4B621262B9CE36D003C496F /* Build configuration list for PBXProject "Yolo_implementation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4B621222B9CE36D003C496F;
+			productRefGroup = E4B6212C2B9CE36D003C496F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4B6212A2B9CE36D003C496F /* Yolo_implementation */,
+				E4B6213A2B9CE36E003C496F /* Yolo_implementationTests */,
+				E4B621442B9CE36E003C496F /* Yolo_implementationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4B621292B9CE36D003C496F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B621362B9CE36E003C496F /* Preview Assets.xcassets in Resources */,
+				E4B621332B9CE36E003C496F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B621392B9CE36E003C496F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B621432B9CE36E003C496F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B621272B9CE36D003C496F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B621592B9D35F6003C496F /* YOLOv3.mlmodel in Sources */,
+				E4B621312B9CE36D003C496F /* ContentView.swift in Sources */,
+				E4B6215D2B9D4492003C496F /* ModelPredictions.swift in Sources */,
+				E4B6212F2B9CE36D003C496F /* Yolo_implementationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B621372B9CE36E003C496F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B6215A2B9D35F6003C496F /* YOLOv3.mlmodel in Sources */,
+				E4B621402B9CE36E003C496F /* Yolo_implementationTests.swift in Sources */,
+				E4B6215E2B9D4492003C496F /* ModelPredictions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B621412B9CE36E003C496F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B6215B2B9D35F6003C496F /* YOLOv3.mlmodel in Sources */,
+				E4B6214A2B9CE36E003C496F /* Yolo_implementationUITests.swift in Sources */,
+				E4B6215F2B9D4492003C496F /* ModelPredictions.swift in Sources */,
+				E4B6214C2B9CE36E003C496F /* Yolo_implementationUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4B6213D2B9CE36E003C496F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4B6212A2B9CE36D003C496F /* Yolo_implementation */;
+			targetProxy = E4B6213C2B9CE36E003C496F /* PBXContainerItemProxy */;
+		};
+		E4B621472B9CE36E003C496F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4B6212A2B9CE36D003C496F /* Yolo_implementation */;
+			targetProxy = E4B621462B9CE36E003C496F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B6214D2B9CE36E003C496F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4B6214E2B9CE36E003C496F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4B621502B9CE36E003C496F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yolo_implementation/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "karabashere.Yolo-implementation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4B621512B9CE36E003C496F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yolo_implementation/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "karabashere.Yolo-implementation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E4B621532B9CE36E003C496F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "karabashere.Yolo-implementationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yolo_implementation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yolo_implementation";
+			};
+			name = Debug;
+		};
+		E4B621542B9CE36E003C496F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "karabashere.Yolo-implementationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yolo_implementation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yolo_implementation";
+			};
+			name = Release;
+		};
+		E4B621562B9CE36E003C496F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "karabashere.Yolo-implementationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yolo_implementation;
+			};
+			name = Debug;
+		};
+		E4B621572B9CE36E003C496F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "karabashere.Yolo-implementationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yolo_implementation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B621262B9CE36D003C496F /* Build configuration list for PBXProject "Yolo_implementation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B6214D2B9CE36E003C496F /* Debug */,
+				E4B6214E2B9CE36E003C496F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B6214F2B9CE36E003C496F /* Build configuration list for PBXNativeTarget "Yolo_implementation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B621502B9CE36E003C496F /* Debug */,
+				E4B621512B9CE36E003C496F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B621522B9CE36E003C496F /* Build configuration list for PBXNativeTarget "Yolo_implementationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B621532B9CE36E003C496F /* Debug */,
+				E4B621542B9CE36E003C496F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B621552B9CE36E003C496F /* Build configuration list for PBXNativeTarget "Yolo_implementationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B621562B9CE36E003C496F /* Debug */,
+				E4B621572B9CE36E003C496F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B621232B9CE36D003C496F /* Project object */;
+}
