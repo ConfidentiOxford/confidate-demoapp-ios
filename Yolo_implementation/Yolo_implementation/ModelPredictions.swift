@@ -5,6 +5,7 @@
 //  Created by Галим Усаев on 10.03.2024.
 //
 
+
 import Foundation
 import CoreML
 import Vision
@@ -23,28 +24,39 @@ struct ModelPredictions {
         "teddy bear", "hair drier", "toothbrush"
     ]
     static func parsePredictions(_ output: YOLOv3Output) -> [String] {
-        var results = [String]()
+    
+        var predictedClasses = Set<String>()
         let confidenceThreshold: Double = 0.4
         let numberOfBoxes = output.confidence.count / classLabels.count
-        
+        let excludedClasses: Set<String> = [
+                    "traffic light", "fire hydrant",  "person","stop sign", "parking meter", "bench", "bottle",
+                    "cup", "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange", "broccoli",
+                    "carrot", "hot dog", "pizza",  "chair", "sofa", "pottedplant", "bed", "diningtable",
+                    "toilet",
+                    "toaster", "sink", "refrigerator",  "clock", "vase", "scissors", "hair drier", "toothbrush"
+                ]
         for boxIndex in 0..<numberOfBoxes {
             let classIndex = boxIndex * classLabels.count
             let classConfidences = (0..<classLabels.count).map { output.confidence[classIndex + $0].doubleValue }
             if let maxConfidence = classConfidences.max(), maxConfidence > confidenceThreshold {
                 let maxIndex = classConfidences.firstIndex(of: maxConfidence)!
                 let className = classLabels[maxIndex]
-                
+                if !excludedClasses.contains(className) {
+                                    predictedClasses.insert(className)
+                                }
+               // predictedClasses.insert(className)
                 let coordinatesIndex = boxIndex * 4
-                let x = output.coordinates[coordinatesIndex].doubleValue
-                let y = output.coordinates[coordinatesIndex + 1].doubleValue
-                let width = output.coordinates[coordinatesIndex + 2].doubleValue
-                let height = output.coordinates[coordinatesIndex + 3].doubleValue
-                
-                let resultString = "Класс: \(className), Вероятность: \(maxConfidence), [x: \(x), y: \(y), width: \(width), height: \(height)]"
-                results.append(resultString)
+//                let x = output.coordinates[coordinatesIndex].doubleValue
+//                let y = output.coordinates[coordinatesIndex + 1].doubleValue
+//                let width = output.coordinates[coordinatesIndex + 2].doubleValue
+//                let height = output.coordinates[coordinatesIndex + 3].doubleValue
+//
+               
+               
             }
         }
-        return results
+ 
+        return Array(predictedClasses)
     }
     
     
