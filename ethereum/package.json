@@ -1,0 +1,28 @@
+{
+  "name": "confidating-contracts",
+  "version": "1.0.0",
+  "description": "### commands:",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.10",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@openzeppelin/contracts": "^4.9.3",
+    "chai": "^4.3.0",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.21.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
