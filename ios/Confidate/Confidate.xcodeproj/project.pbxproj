@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,17 +29,17 @@
 		5E4226F42B9CBD9800116E88 /* AvatarGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4226F32B9CBD9800116E88 /* AvatarGeneration.swift */; };
 		5E4226F62B9CBDD400116E88 /* Utilis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4226F52B9CBDD400116E88 /* Utilis.swift */; };
 		5E4226FB2B9CC75E00116E88 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5E4226FA2B9CC75E00116E88 /* OpenAIKit */; };
-		5EEA2F972B9DE81800AF49AC /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2F962B9DE81800AF49AC /* Web3 */; };
-		5EEA2F992B9DE81800AF49AC /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2F982B9DE81800AF49AC /* Web3ContractABI */; };
-		5EEA2F9B2B9DE81800AF49AC /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2F9A2B9DE81800AF49AC /* Web3PromiseKit */; };
-		5EEA2F9E2B9DE88000AF49AC /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2F9D2B9DE88000AF49AC /* Starscream */; };
-		5EEA2FA12B9DE8E300AF49AC /* Web3Modal in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FA02B9DE8E300AF49AC /* Web3Modal */; };
-		5EEA2FA32B9DE8E300AF49AC /* Web3ModalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FA22B9DE8E300AF49AC /* Web3ModalUI */; };
 		5EEA2FA52B9DE91E00AF49AC /* AppSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2FA42B9DE91E00AF49AC /* AppSample.swift */; };
 		5EEA2FA72B9DF48900AF49AC /* EntityDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2FA62B9DF48900AF49AC /* EntityDetector.swift */; };
 		5EEA2FA92B9DF49C00AF49AC /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2FA82B9DF49C00AF49AC /* ImageProcessor.swift */; };
 		5EEA2FAB2B9DF7A200AF49AC /* extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2FAA2B9DF7A200AF49AC /* extra.swift */; };
 		5EEA2FAD2B9DF92500AF49AC /* confidating.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EEA2FAC2B9DF92500AF49AC /* confidating.json */; };
+		5EEA2FB72B9DFCE600AF49AC /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FB62B9DFCE600AF49AC /* Web3 */; };
+		5EEA2FB92B9DFCE600AF49AC /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FB82B9DFCE600AF49AC /* Web3ContractABI */; };
+		5EEA2FBB2B9DFCE600AF49AC /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FBA2B9DFCE600AF49AC /* Web3PromiseKit */; };
+		5EEA2FBE2B9DFD1200AF49AC /* Web3Modal in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FBD2B9DFD1200AF49AC /* Web3Modal */; };
+		5EEA2FC02B9DFD1200AF49AC /* Web3ModalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FBF2B9DFD1200AF49AC /* Web3ModalUI */; };
+		5EEA2FC32B9DFE4000AF49AC /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FC22B9DFE4000AF49AC /* Starscream */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,13 +78,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EEA2F992B9DE81800AF49AC /* Web3ContractABI in Frameworks */,
-				5EEA2FA32B9DE8E300AF49AC /* Web3ModalUI in Frameworks */,
+				5EEA2FC32B9DFE4000AF49AC /* Starscream in Frameworks */,
+				5EEA2FB72B9DFCE600AF49AC /* Web3 in Frameworks */,
+				5EEA2FC02B9DFD1200AF49AC /* Web3ModalUI in Frameworks */,
 				5E4226FB2B9CC75E00116E88 /* OpenAIKit in Frameworks */,
-				5EEA2F9B2B9DE81800AF49AC /* Web3PromiseKit in Frameworks */,
-				5EEA2FA12B9DE8E300AF49AC /* Web3Modal in Frameworks */,
-				5EEA2F9E2B9DE88000AF49AC /* Starscream in Frameworks */,
-				5EEA2F972B9DE81800AF49AC /* Web3 in Frameworks */,
+				5EEA2FB92B9DFCE600AF49AC /* Web3ContractABI in Frameworks */,
+				5EEA2FBE2B9DFD1200AF49AC /* Web3Modal in Frameworks */,
+				5EEA2FBB2B9DFCE600AF49AC /* Web3PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,12 +223,12 @@
 			name = Confidate;
 			packageProductDependencies = (
 				5E4226FA2B9CC75E00116E88 /* OpenAIKit */,
-				5EEA2F962B9DE81800AF49AC /* Web3 */,
-				5EEA2F982B9DE81800AF49AC /* Web3ContractABI */,
-				5EEA2F9A2B9DE81800AF49AC /* Web3PromiseKit */,
-				5EEA2F9D2B9DE88000AF49AC /* Starscream */,
-				5EEA2FA02B9DE8E300AF49AC /* Web3Modal */,
-				5EEA2FA22B9DE8E300AF49AC /* Web3ModalUI */,
+				5EEA2FB62B9DFCE600AF49AC /* Web3 */,
+				5EEA2FB82B9DFCE600AF49AC /* Web3ContractABI */,
+				5EEA2FBA2B9DFCE600AF49AC /* Web3PromiseKit */,
+				5EEA2FBD2B9DFD1200AF49AC /* Web3Modal */,
+				5EEA2FBF2B9DFD1200AF49AC /* Web3ModalUI */,
+				5EEA2FC22B9DFE4000AF49AC /* Starscream */,
 			);
 			productName = Confidate;
 			productReference = 5E05034D2B9C60E20034C293 /* Confidate.app */;
@@ -260,9 +260,8 @@
 			mainGroup = 5E0503442B9C60E20034C293;
 			packageReferences = (
 				5E4226F92B9CC75E00116E88 /* XCRemoteSwiftPackageReference "OpenAIKit" */,
-				5EEA2F952B9DE81800AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */,
-				5EEA2F9C2B9DE88000AF49AC /* XCRemoteSwiftPackageReference "Starscream" */,
-				5EEA2F9F2B9DE8E300AF49AC /* XCLocalSwiftPackageReference "../../web3modal-swift" */,
+				5EEA2FB52B9DFCE600AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */,
+				5EEA2FC12B9DFE4000AF49AC /* XCRemoteSwiftPackageReference "Starscream" */,
 			);
 			productRefGroup = 5E05034E2B9C60E20034C293 /* Products */;
 			projectDirPath = "";
@@ -527,13 +526,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		5EEA2F9F2B9DE8E300AF49AC /* XCLocalSwiftPackageReference "../../web3modal-swift" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../web3modal-swift";
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		5E4226F92B9CC75E00116E88 /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -543,7 +535,7 @@
 				minimumVersion = 2.0.1;
 			};
 		};
-		5EEA2F952B9DE81800AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */ = {
+		5EEA2FB52B9DFCE600AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Boilertalk/Web3.swift.git";
 			requirement = {
@@ -551,12 +543,12 @@
 				minimumVersion = 0.8.7;
 			};
 		};
-		5EEA2F9C2B9DE88000AF49AC /* XCRemoteSwiftPackageReference "Starscream" */ = {
+		5EEA2FC12B9DFE4000AF49AC /* XCRemoteSwiftPackageReference "Starscream" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/daltoniam/Starscream";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.2;
+				kind = exactVersion;
+				version = 3.1.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -567,33 +559,33 @@
 			package = 5E4226F92B9CC75E00116E88 /* XCRemoteSwiftPackageReference "OpenAIKit" */;
 			productName = OpenAIKit;
 		};
-		5EEA2F962B9DE81800AF49AC /* Web3 */ = {
+		5EEA2FB62B9DFCE600AF49AC /* Web3 */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5EEA2F952B9DE81800AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			package = 5EEA2FB52B9DFCE600AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */;
 			productName = Web3;
 		};
-		5EEA2F982B9DE81800AF49AC /* Web3ContractABI */ = {
+		5EEA2FB82B9DFCE600AF49AC /* Web3ContractABI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5EEA2F952B9DE81800AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			package = 5EEA2FB52B9DFCE600AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */;
 			productName = Web3ContractABI;
 		};
-		5EEA2F9A2B9DE81800AF49AC /* Web3PromiseKit */ = {
+		5EEA2FBA2B9DFCE600AF49AC /* Web3PromiseKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5EEA2F952B9DE81800AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			package = 5EEA2FB52B9DFCE600AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */;
 			productName = Web3PromiseKit;
 		};
-		5EEA2F9D2B9DE88000AF49AC /* Starscream */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5EEA2F9C2B9DE88000AF49AC /* XCRemoteSwiftPackageReference "Starscream" */;
-			productName = Starscream;
-		};
-		5EEA2FA02B9DE8E300AF49AC /* Web3Modal */ = {
+		5EEA2FBD2B9DFD1200AF49AC /* Web3Modal */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Web3Modal;
 		};
-		5EEA2FA22B9DE8E300AF49AC /* Web3ModalUI */ = {
+		5EEA2FBF2B9DFD1200AF49AC /* Web3ModalUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Web3ModalUI;
+		};
+		5EEA2FC22B9DFE4000AF49AC /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EEA2FC12B9DFE4000AF49AC /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
