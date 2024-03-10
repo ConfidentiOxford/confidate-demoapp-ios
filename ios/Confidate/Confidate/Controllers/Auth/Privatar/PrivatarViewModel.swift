@@ -44,6 +44,8 @@ final class PrivatarViewModel {
             lastImage = image
             await view?.set(image: image)
             await view?.stopAnimating()
+        } else {
+            print("Error during avatar generation")
         }
     }
 }

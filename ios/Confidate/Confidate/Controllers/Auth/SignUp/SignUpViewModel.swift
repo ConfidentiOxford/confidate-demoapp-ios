@@ -56,6 +56,13 @@ final class SetUpViewModel {
     private func imagesPicked() {
         print("[SetUpViewModel] Images picked (\(selectedImages.count) files)")
         let model = model_cat_dog_rgb()
+        let det = EntityDetector()
+        let hobbie = try? det.detect(images: selectedImages)
+        if let hobbie = hobbie {
+            DispatchQueue.main.async {
+                self.view?.setHobbieTextField(text: hobbie)
+            }
+        }
         for image in selectedImages {
             guard let resizedImage = image.resizeImage(targetSize: CGSize(width: 28, height: 28)),
                   let pixelBuffer = resizedImage.pixelBuffer else { continue }
@@ -63,7 +70,7 @@ final class SetUpViewModel {
             let prediction = try? model.prediction(input: input).Identity
             DispatchQueue.main.async {
                 if prediction?["cat"] ?? 0 > 0.7 {
-                    self.autofill(with: "cat")
+                    self.autofill(with: "dog")
                 }
                 self.view?.stopAnimating()
             }
@@ -71,7 +78,7 @@ final class SetUpViewModel {
     }
     
     private func autofill(with text: String) {
-        view?.setTextField(text: text)
+        view?.setAnimalTextField(text: text)
     }
 }
 

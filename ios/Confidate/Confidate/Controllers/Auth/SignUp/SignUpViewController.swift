@@ -242,15 +242,20 @@ final class SetUpViewController: UIViewController {
         present(viewController, animated: true, completion: nil)
     }
     
-    func setTextField(text: String) {
+    func setAnimalTextField(text: String) {
         animalPrefferenceTextField.text = text
+        textFieldDidChange()
+    }
+    
+    func setHobbieTextField(text: String) {
+        hobbieTextField.text = text
         textFieldDidChange()
     }
     
     func approveFields() {
         genderTextField.backgroundColor = .lightGray.withAlphaComponent(0.1)
         animalPrefferenceTextField.backgroundColor = .green.withAlphaComponent(0.1)
-        hobbieTextField.backgroundColor = .lightGray.withAlphaComponent(0.1)
+        hobbieTextField.backgroundColor = .green.withAlphaComponent(0.1)
     }
     
     func unapproveFields() {
@@ -279,7 +284,7 @@ final class SetUpViewController: UIViewController {
     func startAnimating() {
         activityIndicator.isHidden = false
         activityIndicator.startAnimating()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
             self.stopAnimating()
         }
     }
