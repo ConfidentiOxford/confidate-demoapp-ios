@@ -13,8 +13,8 @@ import Foundation
 
 class AvatarGenerator {
 
-    let apiKey = ""
-    let orgId = ""
+    let apiKey = "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"
+    let orgId = "org-Szqh6uHBhKPMLX7xeiDeDqlL"
     private let client: OpenAI
     
     init(){

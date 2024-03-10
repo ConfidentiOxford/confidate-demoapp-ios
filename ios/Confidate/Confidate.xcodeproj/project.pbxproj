@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,17 +29,22 @@
 		5E4226F42B9CBD9800116E88 /* AvatarGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4226F32B9CBD9800116E88 /* AvatarGeneration.swift */; };
 		5E4226F62B9CBDD400116E88 /* Utilis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4226F52B9CBDD400116E88 /* Utilis.swift */; };
 		5E4226FB2B9CC75E00116E88 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5E4226FA2B9CC75E00116E88 /* OpenAIKit */; };
-		5EEA2FA52B9DE91E00AF49AC /* AppSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2FA42B9DE91E00AF49AC /* AppSample.swift */; };
 		5EEA2FA72B9DF48900AF49AC /* EntityDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2FA62B9DF48900AF49AC /* EntityDetector.swift */; };
 		5EEA2FA92B9DF49C00AF49AC /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2FA82B9DF49C00AF49AC /* ImageProcessor.swift */; };
 		5EEA2FAB2B9DF7A200AF49AC /* extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2FAA2B9DF7A200AF49AC /* extra.swift */; };
-		5EEA2FAD2B9DF92500AF49AC /* confidating.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EEA2FAC2B9DF92500AF49AC /* confidating.json */; };
 		5EEA2FB72B9DFCE600AF49AC /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FB62B9DFCE600AF49AC /* Web3 */; };
 		5EEA2FB92B9DFCE600AF49AC /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FB82B9DFCE600AF49AC /* Web3ContractABI */; };
 		5EEA2FBB2B9DFCE600AF49AC /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FBA2B9DFCE600AF49AC /* Web3PromiseKit */; };
 		5EEA2FBE2B9DFD1200AF49AC /* Web3Modal in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FBD2B9DFD1200AF49AC /* Web3Modal */; };
 		5EEA2FC02B9DFD1200AF49AC /* Web3ModalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FBF2B9DFD1200AF49AC /* Web3ModalUI */; };
 		5EEA2FC32B9DFE4000AF49AC /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 5EEA2FC22B9DFE4000AF49AC /* Starscream */; };
+		609C016A2B9E0BD600D5E219 /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 609C01692B9E0BD600D5E219 /* YOLOv3.mlmodel */; };
+		609C016C2B9E0BD800D5E219 /* BERTEmbedder.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 609C016B2B9E0BD800D5E219 /* BERTEmbedder.mlmodel */; };
+		609C016F2B9E0BE900D5E219 /* Web3Modal in Frameworks */ = {isa = PBXBuildFile; productRef = 609C016E2B9E0BE900D5E219 /* Web3Modal */; };
+		609C01712B9E0BE900D5E219 /* Web3ModalUI in Frameworks */ = {isa = PBXBuildFile; productRef = 609C01702B9E0BE900D5E219 /* Web3ModalUI */; };
+		609C01732B9E0CD500D5E219 /* AppSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609C01722B9E0CD500D5E219 /* AppSample.swift */; };
+		609C01752B9E0F0F00D5E219 /* Confidate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 609C01742B9E0F0F00D5E219 /* Confidate.plist */; };
+		609C01782B9E12F400D5E219 /* confidating.json in Resources */ = {isa = PBXBuildFile; fileRef = 609C01772B9E12F400D5E219 /* confidating.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,11 +71,15 @@
 		5E4226F12B9CBC9000116E88 /* vocab.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = vocab.txt; sourceTree = "<group>"; };
 		5E4226F32B9CBD9800116E88 /* AvatarGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarGeneration.swift; sourceTree = "<group>"; };
 		5E4226F52B9CBDD400116E88 /* Utilis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilis.swift; sourceTree = "<group>"; };
-		5EEA2FA42B9DE91E00AF49AC /* AppSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppSample.swift; path = ../../../../../AppSample.swift; sourceTree = "<group>"; };
 		5EEA2FA62B9DF48900AF49AC /* EntityDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityDetector.swift; sourceTree = "<group>"; };
 		5EEA2FA82B9DF49C00AF49AC /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		5EEA2FAA2B9DF7A200AF49AC /* extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extra.swift; sourceTree = "<group>"; };
-		5EEA2FAC2B9DF92500AF49AC /* confidating.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = confidating.json; path = ../../../../Downloads/confidating.json; sourceTree = "<group>"; };
+		609C01692B9E0BD600D5E219 /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlmodel; sourceTree = "<group>"; };
+		609C016B2B9E0BD800D5E219 /* BERTEmbedder.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BERTEmbedder.mlmodel; sourceTree = "<group>"; };
+		609C01722B9E0CD500D5E219 /* AppSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSample.swift; sourceTree = "<group>"; };
+		609C01742B9E0F0F00D5E219 /* Confidate.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Confidate.plist; sourceTree = "<group>"; };
+		609C01762B9E0FC200D5E219 /* Confidate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Confidate.entitlements; sourceTree = "<group>"; };
+		609C01772B9E12F400D5E219 /* confidating.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = confidating.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,8 @@
 				5EEA2FB92B9DFCE600AF49AC /* Web3ContractABI in Frameworks */,
 				5EEA2FBE2B9DFD1200AF49AC /* Web3Modal in Frameworks */,
 				5EEA2FBB2B9DFCE600AF49AC /* Web3PromiseKit in Frameworks */,
+				609C01712B9E0BE900D5E219 /* Web3ModalUI in Frameworks */,
+				609C016F2B9E0BE900D5E219 /* Web3Modal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +105,10 @@
 		5E0503442B9C60E20034C293 = {
 			isa = PBXGroup;
 			children = (
-				5EEA2FAC2B9DF92500AF49AC /* confidating.json */,
+				609C01772B9E12F400D5E219 /* confidating.json */,
+				609C01742B9E0F0F00D5E219 /* Confidate.plist */,
+				609C01692B9E0BD600D5E219 /* YOLOv3.mlmodel */,
+				609C016B2B9E0BD800D5E219 /* BERTEmbedder.mlmodel */,
 				5E05034F2B9C60E20034C293 /* Confidate */,
 				5E05034E2B9C60E20034C293 /* Products */,
 			);
@@ -111,6 +125,7 @@
 		5E05034F2B9C60E20034C293 /* Confidate */ = {
 			isa = PBXGroup;
 			children = (
+				609C01762B9E0FC200D5E219 /* Confidate.entitlements */,
 				5E4226C62B9C6B4A00116E88 /* Common */,
 				5E4226C72B9C6B5100116E88 /* Controllers */,
 				5E4226C82B9C6B5B00116E88 /* Models */,
@@ -124,6 +139,7 @@
 		5E4226C62B9C6B4A00116E88 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				609C01722B9E0CD500D5E219 /* AppSample.swift */,
 				5E0503522B9C60E30034C293 /* SceneDelegate.swift */,
 				5E0503502B9C60E30034C293 /* AppDelegate.swift */,
 				5E4226C42B9C6B4300116E88 /* MVVMBuilder.swift */,
@@ -131,7 +147,6 @@
 				5E4226E72B9CAC3A00116E88 /* UIImage+Extension.swift */,
 				5E4226EB2B9CBC1000116E88 /* UserEmbedder.swift */,
 				5E4226EF2B9CBC5B00116E88 /* BertTokenizer.swift */,
-				5EEA2FA42B9DE91E00AF49AC /* AppSample.swift */,
 				5E4226F32B9CBD9800116E88 /* AvatarGeneration.swift */,
 				5E4226F52B9CBDD400116E88 /* Utilis.swift */,
 				5EEA2FA62B9DF48900AF49AC /* EntityDetector.swift */,
@@ -229,6 +244,8 @@
 				5EEA2FBD2B9DFD1200AF49AC /* Web3Modal */,
 				5EEA2FBF2B9DFD1200AF49AC /* Web3ModalUI */,
 				5EEA2FC22B9DFE4000AF49AC /* Starscream */,
+				609C016E2B9E0BE900D5E219 /* Web3Modal */,
+				609C01702B9E0BE900D5E219 /* Web3ModalUI */,
 			);
 			productName = Confidate;
 			productReference = 5E05034D2B9C60E20034C293 /* Confidate.app */;
@@ -262,6 +279,7 @@
 				5E4226F92B9CC75E00116E88 /* XCRemoteSwiftPackageReference "OpenAIKit" */,
 				5EEA2FB52B9DFCE600AF49AC /* XCRemoteSwiftPackageReference "Web3.swift" */,
 				5EEA2FC12B9DFE4000AF49AC /* XCRemoteSwiftPackageReference "Starscream" */,
+				609C016D2B9E0BE900D5E219 /* XCLocalSwiftPackageReference "../../../web3modal-swift" */,
 			);
 			productRefGroup = 5E05034E2B9C60E20034C293 /* Products */;
 			projectDirPath = "";
@@ -277,9 +295,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609C01782B9E12F400D5E219 /* confidating.json in Resources */,
 				5E05035D2B9C60E50034C293 /* LaunchScreen.storyboard in Resources */,
 				5E05035A2B9C60E50034C293 /* Assets.xcassets in Resources */,
-				5EEA2FAD2B9DF92500AF49AC /* confidating.json in Resources */,
+				609C01752B9E0F0F00D5E219 /* Confidate.plist in Resources */,
 				5E4226F22B9CBC9400116E88 /* vocab.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,13 +317,15 @@
 				5E4226E82B9CAC3A00116E88 /* UIImage+Extension.swift in Sources */,
 				5E4226C52B9C6B4300116E88 /* MVVMBuilder.swift in Sources */,
 				5E4226F02B9CBC5B00116E88 /* BertTokenizer.swift in Sources */,
+				609C016A2B9E0BD600D5E219 /* YOLOv3.mlmodel in Sources */,
 				5E4226E22B9CA9F400116E88 /* PrivatarViewController.swift in Sources */,
+				609C016C2B9E0BD800D5E219 /* BERTEmbedder.mlmodel in Sources */,
 				5E4226DB2B9C777F00116E88 /* SignUpViewController.swift in Sources */,
 				5E0503512B9C60E30034C293 /* AppDelegate.swift in Sources */,
 				5E4226DD2B9C778800116E88 /* SignUpViewModel.swift in Sources */,
+				609C01732B9E0CD500D5E219 /* AppSample.swift in Sources */,
 				5EEA2FA72B9DF48900AF49AC /* EntityDetector.swift in Sources */,
 				5E4226E62B9CAAC900116E88 /* model_cat_dog_rgb.mlmodel in Sources */,
-				5EEA2FA52B9DE91E00AF49AC /* AppSample.swift in Sources */,
 				5E4226F42B9CBD9800116E88 /* AvatarGeneration.swift in Sources */,
 				5E4226D82B9C771800116E88 /* WalletConnectViewModel.swift in Sources */,
 				5E0503532B9C60E30034C293 /* SceneDelegate.swift in Sources */,
@@ -454,8 +475,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Confidate/Confidate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Confidate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -481,8 +504,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Confidate/Confidate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Confidate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -525,6 +550,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		609C016D2B9E0BE900D5E219 /* XCLocalSwiftPackageReference "../../../web3modal-swift" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../web3modal-swift";
+		};
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		5E4226F92B9CC75E00116E88 /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
@@ -586,6 +618,14 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5EEA2FC12B9DFE4000AF49AC /* XCRemoteSwiftPackageReference "Starscream" */;
 			productName = Starscream;
+		};
+		609C016E2B9E0BE900D5E219 /* Web3Modal */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Web3Modal;
+		};
+		609C01702B9E0BE900D5E219 /* Web3ModalUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Web3ModalUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
